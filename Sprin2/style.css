@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Shizuru&family=Staatliches&display=swap');
+
+body {
+  background-color: red;
+  background-color: rgb(0, 0, 0);
+  margin: 0;
+  padding: 0;
+}
+
+.redbackground {
+background-color: red;
+  font-family: 'Staatliches', cursive;
+  font-size: 600px;
+  color: rgb(0, 0, 0);
+  font-style: bold;;
+  text-align: center;
+}
+
+.blackbackground {
+ 
+  color: rgb(24, 24, 24);
+  font-family: 'Staatliches', cursive;
+  font-size: 200px;
+  font-style: bold;;
+  text-align: center;
+
+}
+
+
+.redtext {
+  color: red;
+  font-family: 'Staatliches', cursive;
+  font-size: 300px;
+  font-style: bold;;
+  text-align: center;
+}
+
+h5 {
+  font-size: 200px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation-duration: 0.01s;
+  animation-name: cyclomne;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+h1 {
+
+  background-color: rgba(0, 0, 0, 0.418);
+    color: hsl(0, 0%, 13%);
+    text-align: center;
+    font-size: 100px;
+    font-weight: bold;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 20px;
+    cursor: pointer;
+  }
+  
+  h1:hover span:nth-child(1) {
+    letter-spacing: 20px;
+  }
+  
+  h1:hover span:nth-child(2) {
+    letter-spacing: 20px;
+    color: hsl(0, 100%, 40%);
+    text-shadow: 0 0 10px hsl(0, 100%, 50%), 0 0 20px  hsl(0, 100%, 50%), 
+   0 0 100px hsl(0, 500%, 40%);
+   }
+  
+  h1:hover span:nth-child(3) {
+    letter-spacing: 20px;
+   }
+  
+   h1:hover span {
+     color: hsl(0, 0%, 100%);
+     text-shadow: 0 0 10px hsl(0, 0%, 100%), 0 0 20px  hsl(0, 0%, 50%), 
+    0 0 70px hsl(0, 0%, 40%);
+   }
+  
+h2 {
+  background: url();
+}
+  
+
+
+
+h3 {
+  color: hsl(0, 0%, 28%);
+  font-size: 100px;
+  font-weight: bold;
+  font-family: 'Staatliches', cursive;
+  letter-spacing: 7px;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 64px;
+  background: linear-gradient(to right, hsl(0, 100%, 8%) 0, hsl(0, 100%, 50%) 10%, hsl(0, 100%, 8%) 20%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 800px;
+  }
+  100% {
+    background-position: 100px;
+  }
+}
+
+
+
+
+ h4 {
+  background-color: red;
+  font-family: 'Staatliches', cursive;
+  text-align: center;
+  color: transparent;
+  font-size: 200px;
+  background:url(https://i.pinimg.com/750x/18/64/4d/18644d58bf32fff9a2b34bfc1917415e.jpg);
+  background-size: 40%;
+  background-position: 50% 50%;
+  -webkit-background-clip: text;
+  animation: zoom 7.5s ease-in-out 0.5s infinite;
+  }
+
+  @keyframes zoom {
+    from {
+      background-size: 90%;
+    }
+    to {
+      background-size: 10%;
+    }
+
+  }
+
+ 
+
+
+
+.loader{
+  text-align: center;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+  padding: 50px;
+}
+.loader span{
+  font-family: 'Staatliches', cursive;
+  letter-spacing: 0px;
+    font-size: 4.5rem;
+    font-weight: 700;
+    transform: translateZ(-100%);
+    display: inline-block;
+    color: red;
+    animation: animate 2s infinite;
+    transition: all 0.5s;
+}
+.loader span:nth-child(1) {
+    animation-delay: 0.1s;
+}
+.loader span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.loader span:nth-child(3) {
+    animation-delay: 0.3s;
+}
+.loader span:nth-child(4) {
+    animation-delay: 0.4s;
+}
+.loader span:nth-child(5) {
+    animation-delay: 0.5s;
+}
+.loader span:nth-child(6) {
+    animation-delay: 0.6s;
+}
+.loader span:nth-child(7) {
+    animation-delay: 0.7s;
+}
+@keyframes animate{
+    0% {
+        color: rgb(245, 20, 20);
+        transform: translateY(0);
+        margin-left:0 ;
+    }
+    25%{
+        transform: translateY(-15%);
+        margin-left: 10px;
+        text-shadow: 0 15px 5px rgba(0, 0, 0, 1);
+    }
+    100%{
+        color: rgb(255, 255, 255, .1);
+        transform: translateY(0);
+        margin-left: 0;
+    }
